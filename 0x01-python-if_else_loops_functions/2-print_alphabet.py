@@ -1,3 +1,5 @@
 #!/usr/bin/python3
-for value in range(97, 123):
-    print(chr(value), end='')
+output = ''
+for value in range(ord('a'), ord('z') + 1):
+    output += chr(value)
+print(output, end="")
