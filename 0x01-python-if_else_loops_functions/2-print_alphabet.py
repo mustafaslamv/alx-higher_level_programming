@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-output = ''
 for value in range(ord('a'), ord('z') + 1):
-    output += chr(value)
-print(f"{output:s}", end="")
+    if value == ord('e') or value == ord('q'):
+        continue
+    print("{:s}".format(chr(value)), end='')
