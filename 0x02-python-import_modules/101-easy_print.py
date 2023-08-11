@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-from print2 import pprint; pprint("#pythoniscool")
+import os; os.write(1, "#pythoniscool\n".encode())
