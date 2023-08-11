@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-import builtins; builtins.print("#pythoniscool")
+from print2 import pprint; pprint("#pythoniscool")
