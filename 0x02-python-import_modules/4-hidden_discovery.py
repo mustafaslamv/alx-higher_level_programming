@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+#type: ignore
 import hidden_4
 
 if __name__ == "__main__":
