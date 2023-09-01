@@ -49,19 +49,31 @@ class Square:
         """
         return self.__size * self.__size
 
-    def __str__(self):
+    def my_print(self):
         """
-        Returns a string representation of the square with the character #.
-
-        Returns:
-            str: The string representation of the square.
+        Prints in stdout the square with the character #.
         """
-        result = ""
         if self.size == 0:
-            return result
+            print("")
         else:
             for _ in range(self.position[1]):
-                result += "\n"
+                print("")
             for _ in range(self.size):
-                result += " " * self.position[0] + "#" * self.size + "\n"
-        return result
+                print(" " * self.position[0] + "#" * self.size)
+
+    def __str__(self):
+        """
+        Return a string representation of the square with the character '#'
+        """
+        printed_square = ""
+        if self.__size == 0:
+            return printed_square
+
+        for _ in range(self.__position[1]):
+            printed_square += "\n"
+        for _ in range(self.__size):
+            printed_square += (" " * self.__position[0] +
+                               "#" * self.__size +
+                               '\n')
+
+        return printed_square.rstrip('\n')
