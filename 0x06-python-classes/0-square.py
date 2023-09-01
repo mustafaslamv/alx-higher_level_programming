@@ -1,5 +1,12 @@
 #!/usr/bin/python3
 
 class Square:
-    "Empty class"
-    pass
+    """
+    Represents a square shape.
+    """
+
+    def __init__(self):
+        """
+        Initializes a new instance of the Square class.
+        """
+        pass
