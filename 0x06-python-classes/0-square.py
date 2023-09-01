@@ -1,12 +1,7 @@
 #!/usr/bin/python3
-
+"""file contains empty class"""
 class Square:
     """
     Represents a square shape.
     """
-
-    def __init__(self):
-        """
-        Initializes a new instance of the Square class.
-        """
-        pass
+    pass
