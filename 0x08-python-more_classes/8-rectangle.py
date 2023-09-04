@@ -87,5 +87,5 @@ class Rectangle:
         area1 = rect_1.area()
         area2 = rect_2.area()
         if area1 == area2:
-            return area1
-        return area1 if area1 > area2 else area2
+            return rect_1
+        return rect_1 if rect_1 > rect_2 else rect_2
