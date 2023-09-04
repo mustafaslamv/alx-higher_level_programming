@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task: 0. Simple Rectangle"""
+"""Task: 1. Real definition of a rectangle"""
 
 
 class Rectangle:
