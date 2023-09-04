@@ -55,6 +55,8 @@ class Rectangle:
     def __str__(self):
         """return class instance as a Rectangle W * H made of '#'"""
         result = ""
+        if self.height == 0 or self.width == 0:
+            return result
         for i in range(self.height):
             result += ("#" * self.width)
             if i != self.height-1:
