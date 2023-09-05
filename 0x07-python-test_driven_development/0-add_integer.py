@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Task: 0. Integers addition"""
-import doctest
 
 
 def add_integer(a, b=98):
