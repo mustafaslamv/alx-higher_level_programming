@@ -1,0 +1,40 @@
+The ``2-matrix_divided`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+
+import function:
+
+       >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+       >>> say_my_name("mustafa")
+       My name is mustafa 
+
+       >>> say_my_name("","")
+       My name is  
+
+       >>> say_my_name(22)
+       Traceback (most recent call last):
+       ...
+       TypeError: first_name must be a string
+
+       >>> say_my_name(22,22)
+       Traceback (most recent call last):
+       ...
+       TypeError: first_name must be a string
+
+       >>> say_my_name("slama",22)
+       Traceback (most recent call last):
+       ...
+       TypeError: last_name must be a string
+
+       >>> say_my_name(None)
+       Traceback (most recent call last):
+       ...
+       TypeError: first_name must be a string
+
+       >>> say_my_name(None,None)
+       Traceback (most recent call last):
+       ...
+       TypeError: first_name must be a string
