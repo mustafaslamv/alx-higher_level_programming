@@ -8,38 +8,37 @@ import function:
 
 
 	>>> MyList = __import__('1-my_list').MyList
-
 	>>> my_list = MyList()
+
 
 	>>> my_list.print_sorted()
 	[]
 
+
 	>>> my_list.append(1)
-
 	>>> my_list.append(50)
-
 	>>> my_list.append(3)
-
 	>>> print(my_list)
 	[1, 50, None]
+
 
 	>>> my_list.print_sorted()
 	Traceback (most recent call last):
 	...
 	TypeError: '<' not supported between instances of 'NoneType' and 'float'
 
-	>>> my_list.clear()
 
+	>>> my_list.clear()
 	>>> my_list
 	[]
 
-	>>> my_list.extend([1,18,0,4,5])
 
+	>>> my_list.extend([1,18,0,4,5])
 	>>> my_list
 	[1, 18, 0, 4, 5]
-
 	>>> my_list.print_sorted()
 	[0, 1, 4, 5, 18]
+
 
 	>>> my_list = MyList([1, 6, 7])
 	>>> my_lits[0] = 5
