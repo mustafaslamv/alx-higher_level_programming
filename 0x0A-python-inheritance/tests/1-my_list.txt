@@ -39,5 +39,6 @@ import function:
 	[0, 1, 4, 5, 18]
 
 	>>> my_list[0] = 500
+	
 	>>> my_list
 	[500, 1, 4, 5, 18]
