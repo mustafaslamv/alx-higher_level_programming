@@ -5,8 +5,7 @@
 class MyList(list):
     """class MyList that inherits from list"""
 
-    def __init_subclass__(cls) -> None:
-        return super().__init_subclass__()
-
     def print_sorted(self):
+        """prints the list, but sorted (ascending sort)"""
+
         print(sorted(self))
