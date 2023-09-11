@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Task: 1. My list"""
-import doctest
 
 
 class MyList(list):
