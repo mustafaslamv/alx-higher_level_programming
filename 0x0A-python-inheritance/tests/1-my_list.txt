@@ -43,6 +43,5 @@ import function:
 
 
 	>>> my_list = MyList([5,4,3,2,1])
-
 	>>> my_list.print_sorted()
 	[1,2,3,4,5]
