@@ -4,9 +4,9 @@
 
 def is_same_class(obj, a_class):
     """Checks if the object is an exact instance of the class.
-    
+
     Returns:
-    
+
     True if the object is an exact instance of the class, False otherwise.
 
         Note: 5 is instance of int and object as int inherit from object
