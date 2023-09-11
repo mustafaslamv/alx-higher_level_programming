@@ -38,9 +38,3 @@ import function:
 	[1, 18, 0, 4, 5]
 	>>> my_list.print_sorted()
 	[0, 1, 4, 5, 18]
-
-
-	>>> my_list = MyList([1, 6, 7])
-	>>> my_lits[0] = 5
-	>>> print(my_list)
-	[5, 6, 7]
