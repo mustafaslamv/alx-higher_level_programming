@@ -37,5 +37,7 @@ there is no need to call file.close() when using with statement. The with statem
 --------------------------------------------------------
 
 read() returns the whole file as str
+
 readline() return single line as str
+
 readlines() return all the file lines as list
