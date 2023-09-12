@@ -4,7 +4,6 @@
 
 def read_file(filename=""):
     """function reads text file as UTF8 and prints it"""
-    with open(filename, encoding="utf-8") as f:
-        lines = f.readlines()
-        for i in lines:
-            print(i)
+    with open(filename,'r', encoding="UTF-8") as f:
+        lines = f.read()
+        print(lines,end="")
