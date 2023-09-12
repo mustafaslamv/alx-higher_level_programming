@@ -8,5 +8,3 @@ def read_file(filename=""):
         lines = f.readlines()
         for i in lines:
             print(i)
-
-read_file("README.md")
