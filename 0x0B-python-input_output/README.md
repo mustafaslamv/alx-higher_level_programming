@@ -26,9 +26,12 @@ file.write('hello world !')
 file.close()
 
 ### 2) using with statement
+```
 with open('file_path', 'w') as file:
 
     file.write('hello world !')
+
+```
 
 there is no need to call file.close() when using with statement. The with statement itself ensures proper acquisition and release of resources
 
