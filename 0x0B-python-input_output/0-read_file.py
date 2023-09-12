@@ -5,5 +5,8 @@
 def read_file(filename=""):
     """function reads text file as UTF8 and prints it"""
     with open(filename, "r", encoding="utf-8") as f:
-        for line in f:
-            print(line)
+        lines = f.readlines()
+        for i in lines:
+            print(i)
+
+read_file("README.md")
