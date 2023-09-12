@@ -22,16 +22,13 @@ modes:
 
 ```
 file = open('file_path', 'w')
-
 file.write('hello world !')
-
 file.close()
 ```
 
 ### 2) using with statement
 ```
 with open('file_path', 'w') as file:
-
     file.write('hello world !')
 ```
 
