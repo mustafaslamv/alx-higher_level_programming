@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+"""Task: 13. search and update"""
+
+
+def append_after(filename="", search_string="", new_string=""):
+    """append line after specific string"""
+
+    result = ""
+    with open(filename, "a+") as file:
+        lines = file.readlines()
+        for line in lines:
+            result += line
+            if search_string in line:
+                result += new_string
+        file.write(result)
