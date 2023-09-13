@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task: student class to JSON"""
+"""Task: 10. Student to JSON with filter"""
 
 
 class Student:
