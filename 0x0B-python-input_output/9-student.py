@@ -1,4 +1,4 @@
-#!/ust/bin/python3
+#!/usr/bin/python3
 """Task: student class to JSON"""
 
 
