@@ -4,5 +4,5 @@ import json
 
 
 def to_json_string(my_obj):
-    """function returns the JSON of an object as str (serialization)"""
+    """Serialize obj to a JSON formatted str."""
     return json.dumps(my_obj)

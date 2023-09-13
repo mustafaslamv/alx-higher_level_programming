@@ -4,5 +4,5 @@ import json
 
 
 def from_json_string(my_str):
-    """function returns object represented by JSON string (deserialization)"""
+    """Deserialize JSON formatted str to a Python object."""
     return json.loads(my_str)
