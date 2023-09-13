@@ -6,7 +6,7 @@ def append_after(filename="", search_string="", new_string=""):
     """append line after specific string"""
 
     result = ""
-    with open(filename, "a+") as file:
+    with open(filename, "r+") as file:
         lines = file.readlines()
         for line in lines:
             result += line
