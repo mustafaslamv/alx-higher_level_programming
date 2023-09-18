@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Task: 3. Validate attributes"""
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -62,4 +62,4 @@ class Rectangle(Base):
         self.__y = value
 
     def area(self):
-        return self.width * self.height
+        return (self.width * self.height)
