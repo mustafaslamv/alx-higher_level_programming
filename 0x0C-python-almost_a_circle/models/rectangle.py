@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Task: 3. Validate attributes"""
+"""Rectangle module"""
 from models.base import Base
 
 
@@ -69,3 +69,7 @@ class Rectangle(Base):
         """ prints the Rectangle instance with the character #"""
         for i in range(self.height):
             print("#" * self.width)
+
+    def __str__(self) -> str:
+        return f"[Rectangle] ({self.id}) {self.x}/\
+{self.y} - {self.width}/{self.height}"
