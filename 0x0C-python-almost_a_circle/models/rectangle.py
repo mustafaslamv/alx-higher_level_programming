@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Task: 3. Validate attributes"""
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
@@ -15,12 +15,10 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """width getter"""
         return self.__width
 
     @width.setter
     def width(self, value):
-        """width setter"""
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -29,12 +27,10 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """height getter"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """height setter"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -43,12 +39,10 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """x getter"""
         return self.__x
 
     @x.setter
     def x(self, value):
-        """x setter"""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
         if value < 0:
@@ -57,12 +51,10 @@ class Rectangle(Base):
 
     @property
     def y(self):
-        """y getter"""
         return self.__y
 
     @y.setter
     def y(self, value):
-        """y setter"""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
