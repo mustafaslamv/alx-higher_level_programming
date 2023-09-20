@@ -46,8 +46,8 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Rectangle":
-            instance = cls(1, 1, 1, 1)
+            instance = cls(1, 1)
         elif cls.__name__ == "Square":
-            instance = cls(1, 1, 1)
+            instance = cls(1)
         instance.update(**dictionary)
         return instance
