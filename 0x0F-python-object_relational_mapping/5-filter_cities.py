@@ -23,17 +23,16 @@ if __name__ == "__main__":
     )
     myCursor = myConn.cursor()
     query = """
-        SELECT name FROM cities
-        WHERE cities.state_id = (SELECT id FROM states WHERE name = %s)
+        SELECT cities.name
+        FROM cities
+        INNER JOIN states ON cities.state_id = states.id
+        WHERE states.name = %s
         ORDER BY cities.id ASC
     """
     myCursor.execute(query, (state_name,))
     result = myCursor.fetchall()
-    if result:
-        for i, city in enumerate(result):
-            if (i < len(result) - 1):
-                print(city[0], end=", ")
-            else:
-                print(city[0])
+    formatted_result = ', '.join(item[0] for item in result)
+    print(formatted_result)
+
     myCursor.close()
     myConn.close()
