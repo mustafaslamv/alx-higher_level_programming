@@ -20,7 +20,7 @@ if __name__ == "__main__":
     )
     myCursor = myConn.cursor()
     myCursor.execute("SELECT * FROM states\
-                     WHERE name LIKE 'N%' ORDER BY states.id ASC")
+                     WHERE BINARY name LIKE 'N%' ORDER BY states.id ASC")
     for i in myCursor.fetchall():
         print(i)
     myCursor.close()
