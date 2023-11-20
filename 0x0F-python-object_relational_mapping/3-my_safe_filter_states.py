@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """script displays all values in the states where name matches the argument
-	but It's safe from MySQL injections!
+    but It's safe from MySQL injections!
 """
 import MySQLdb
 import sys
