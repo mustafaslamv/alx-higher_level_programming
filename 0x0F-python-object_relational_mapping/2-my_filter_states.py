@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
-"""script that lists all states with a name starting with N """
+"""script displays all values in the states where name matches the argument"""
 import MySQLdb
 import sys
 
@@ -22,7 +21,7 @@ if __name__ == "__main__":
     )
     myCursor = myConn.cursor()
     myCursor.execute("SELECT * FROM states\
-                     WHERE name = %s ORDER BY states.id ASC", stateName)
+                     WHERE name = %s ORDER BY states.id ASC", (stateName,))
     for i in myCursor.fetchall():
         print(i)
     myCursor.close()
