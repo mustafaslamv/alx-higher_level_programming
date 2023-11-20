@@ -20,8 +20,10 @@ if __name__ == "__main__":
         charset="utf8"
     )
     myCursor = myConn.cursor()
-    myCursor.execute("SELECT * FROM states\
-                     WHERE name = %s ORDER BY states.id ASC", (stateName,))
+    query = "SELECT * FROM states\
+             WHERE BINARY name = '{}'\
+             ORDER BY states.id ASC".format(stateName)
+    myCursor.execute(query)
     for i in myCursor.fetchall():
         print(i)
     myCursor.close()
