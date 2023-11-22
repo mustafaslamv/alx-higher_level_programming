@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""script that prints the State object with the name"""
+"""script that adds new state row"""
 
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
