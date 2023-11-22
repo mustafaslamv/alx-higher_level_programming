@@ -19,7 +19,3 @@ if __name__ == "__main__":
     for i in delete_list:
         session.delete(i)
     session.commit()
-    # new_name = session.delete()
-
-
-# ./13-model_state_delete_a.py root 313233 hbtn_0e_6_usa
