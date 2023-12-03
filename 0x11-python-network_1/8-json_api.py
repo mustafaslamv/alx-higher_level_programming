@@ -7,10 +7,12 @@ if __name__ == "__main__":
     hostname = "http://0.0.0.0:5000/search_user"
     q = argv[1] if len(argv) >= 2 else ""
     request = requests.post(hostname, {'q': q})
-    dict = request.json()
-    if not dict:
+    dic = request.json()
+    if not dic:
         print("No result")
+    elif not isinstance(dic,dict):
+        print("Not a valid JSON")
     else:
-        id = dict.get('id')
-        name = dict.get('name')
+        id = dic.get('id')
+        name = dic.get('name')
         print(f"[{id}] {name}")
