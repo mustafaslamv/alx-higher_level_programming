@@ -6,11 +6,16 @@ from sys import argv
 if __name__ == "__main__":
     hostname = "http://0.0.0.0:5000/search_user"
     q = argv[1] if len(argv) >= 2 else ""
-    request = requests.post(hostname, {'q': q})
-    dic = request.json()
+    response = requests.post(hostname, {'q': q})
+
+    try:
+        dic = response.json()
+    except ValueError:
+        dic = None
+
     if not dic:
         print("No result")
-    elif not isinstance(dic,dict):
+    elif not isinstance(dic, dict):
         print("Not a valid JSON")
     else:
         id = dic.get('id')
