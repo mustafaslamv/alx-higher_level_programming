@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Python script that sends HTTP request using urllib - 2"""
+"""Python script that sends HTTP request using urllib - 3"""
 from urllib import request
 from urllib import parse
 from sys import argv
