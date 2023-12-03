@@ -13,10 +13,10 @@ if __name__ == "__main__":
     except ValueError:
         dic = None
 
-    if not dic:
-        print("No result")
-    elif not isinstance(dic, dict):
+    if dic is None:
         print("Not a valid JSON")
+    elif not dic:
+        print("No result")
     else:
         id = dic.get('id')
         name = dic.get('name')
