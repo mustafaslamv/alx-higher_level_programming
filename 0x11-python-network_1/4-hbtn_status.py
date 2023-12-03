@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""GET request using requests package"""
 import requests
 
 request = requests.get("https://alx-intranet.hbtn.io/status")
